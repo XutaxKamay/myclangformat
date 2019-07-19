@@ -1,4 +1,3 @@
----
 Language:        Cpp
 AccessModifierOffset: -3
 AlignAfterOpenBracket: Align
@@ -19,24 +18,25 @@ AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: Yes
 BinPackArguments: false
 BinPackParameters: false
-BraceWrapping:   
-  AfterClass:      true
-  AfterControlStatement: true
-  AfterEnum:       true
-  AfterFunction:   true
-  AfterNamespace:  true
-  AfterObjCDeclaration: true
-  AfterStruct:     true
-  AfterUnion:      true
-  AfterExternBlock: true
-  BeforeCatch:     true
-  BeforeElse:      true
-  IndentBraces:    false
-  SplitEmptyFunction: false
-  SplitEmptyRecord: false
-  SplitEmptyNamespace: false
-BreakBeforeBinaryOperators: None
 BreakBeforeBraces: Custom
+BraceWrapping:
+AfterCaseLabel:  true
+AfterClass:      true
+AfterControlStatement: true
+AfterEnum:       true
+AfterFunction:   true
+AfterNamespace:  true
+AfterObjCDeclaration: true
+AfterStruct:     true
+AfterUnion:      true
+AfterExternBlock: true
+BeforeCatch:     true
+BeforeElse:      true
+IndentBraces:    false
+SplitEmptyFunction: false
+SplitEmptyRecord: false
+SplitEmptyNamespace: false
+BreakBeforeBinaryOperators: None
 BreakBeforeInheritanceComma: false
 BreakInheritanceList: AfterColon
 BreakBeforeTernaryOperators: false
@@ -56,21 +56,20 @@ DisableFormat:   false
 ExperimentalAutoDetectBinPacking: false
 FixNamespaceComments: false
 ForEachMacros:   
-  - foreach
-  - Q_FOREACH
-  - BOOST_FOREACH
+- foreach
+- Q_FOREACH
+- BOOST_FOREACH
 IncludeBlocks:   Preserve
 IncludeCategories: 
-  - Regex:           '^"(llvm|llvm-c|clang|clang-c)/'
-    Priority:        2
-  - Regex:           '^(<|"(gtest|gmock|isl|json)/)'
-    Priority:        3
-  - Regex:           '.*'
-    Priority:        1
+- Regex:           '^"(llvm|llvm-c|clang|clang-c)/'
+Priority:        2
+- Regex:           '^(<|"(gtest|gmock|isl|json)/)'
+Priority:        3
+- Regex:           '.*'
+Priority:        1
 IncludeIsMainRegex: '(Test)?$'
 IndentCaseLabels: true
-IndentPPDirectives: None
-# IndentPPDirectives : BeforeHash doesn't exist yet :( https://reviews.llvm.org/D52150
+IndentPPDirectives: BeforeHash
 IndentWidth:     4
 IndentWrappedFunctionNames: false
 JavaScriptQuotes: Leave
@@ -99,10 +98,10 @@ PenaltyBreakFirstLessLess: 80
 PenaltyBreakTemplateDeclaration: 80
 PenaltyBreakString: 80
 PenaltyExcessCharacter: 80
-PenaltyReturnTypeOnItsOwnLine: 80
+PenaltyReturnTypeOnItsOwnLine: 999999
 PointerAlignment: Left
 ReflowComments:  true
-SortIncludes:    false
+SortIncludes:    true
 SortUsingDeclarations: true
 SpaceAfterCStyleCast: false
 SpaceAfterTemplateKeyword: true
@@ -122,5 +121,3 @@ SpacesInSquareBrackets: false
 Standard:        Cpp11
 TabWidth:        8
 UseTab:          Never
-...
-
