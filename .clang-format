@@ -106,7 +106,7 @@ PenaltyBreakFirstLessLess: 80
 PenaltyBreakString: 80
 PenaltyBreakTemplateDeclaration: 80
 # Change that in case it does too much
-PenaltyExcessCharacter: 1
+PenaltyExcessCharacter: 80
 PenaltyReturnTypeOnItsOwnLine: 80
 PointerAlignment: Left
 ReflowComments:  true
