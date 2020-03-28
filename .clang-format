@@ -36,7 +36,7 @@ BraceWrapping:
   AfterExternBlock: true
   BeforeCatch:     true
   BeforeElse:      true
-  BeforeLambdaBody: false
+  BeforeLambdaBody: true
   IndentBraces:    false
   SplitEmptyFunction: false
   SplitEmptyRecord: false
@@ -50,7 +50,7 @@ BreakConstructorInitializers: BeforeColon
 BreakAfterJavaFieldAnnotations: false
 BreakStringLiterals: true
 # Change to 1 if we want to pack everything
-ColumnLimit:     80
+ColumnLimit:     74
 CommentPragmas:  '^ IWYU pragma:'
 CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
@@ -99,15 +99,15 @@ ObjCBlockIndentWidth: 4
 ObjCBreakBeforeNestedBlockParam: true
 ObjCSpaceAfterProperty: true
 ObjCSpaceBeforeProtocolList: true
-PenaltyBreakAssignment: 80
-PenaltyBreakBeforeFirstCallParameter: 80
-PenaltyBreakComment: 80
-PenaltyBreakFirstLessLess: 80
-PenaltyBreakString: 80
-PenaltyBreakTemplateDeclaration: 80
+PenaltyBreakAssignment: 74
+PenaltyBreakBeforeFirstCallParameter: 74
+PenaltyBreakComment: 74
+PenaltyBreakFirstLessLess: 74
+PenaltyBreakString: 74
+PenaltyBreakTemplateDeclaration: 74
 # Change that in case it does too much
-PenaltyExcessCharacter: 80
-PenaltyReturnTypeOnItsOwnLine: 80
+PenaltyExcessCharacter: 74
+PenaltyReturnTypeOnItsOwnLine: 74
 PointerAlignment: Left
 ReflowComments:  true
 SortIncludes:    false
@@ -125,13 +125,13 @@ SpaceInEmptyBlock: false
 SpaceInEmptyParentheses: false
 SpacesBeforeTrailingComments: 1
 # Modify here
-SpacesInAngles:  true
-SpacesInConditionalStatement: true
-SpacesInContainerLiterals: true
-SpacesInCStyleCastParentheses: true
-SpacesInParentheses: true
+SpacesInAngles:  false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
 # Here
-SpacesInSquareBrackets: true
+SpacesInSquareBrackets: false
 # Here too
 SpaceBeforeSquareBrackets: false
 Standard:        Latest
