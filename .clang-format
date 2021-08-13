@@ -2,10 +2,10 @@
 Language:        Cpp
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
-AlignConsecutiveMacros: AcrossComments
-AlignConsecutiveAssignments: AcrossComments
-AlignConsecutiveBitFields: AcrossEmptyLinesAndComments
-AlignConsecutiveDeclarations: AcrossComments
+AlignConsecutiveMacros: Consecutive
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveDeclarations: Consecutive
 AlignEscapedNewlines: Right
 AlignOperands:   Align
 AlignTrailingComments: true
