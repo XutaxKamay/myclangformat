@@ -69,8 +69,10 @@ DisableFormat:   false
 EmptyLineAfterAccessModifier: Never
 EmptyLineBeforeAccessModifier: LogicalBlock
 ExperimentalAutoDetectBinPacking: false
-PackConstructorInitializers: CurrentLine
+PackConstructorInitializers: Never
 BasedOnStyle:    ''
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+AllowAllConstructorInitializersOnNextLine: false
 FixNamespaceComments: false
 ForEachMacros:
   - foreach
