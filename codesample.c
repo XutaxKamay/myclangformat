@@ -87,7 +87,9 @@ void get_remote_lib(const char* lib, pid_t pid, lib_t* result)
 
 ret:
     if (file_maps != NULL)
+    {
         fclose(file_maps);
+    }
 }
 
 ptr_u_t find_remote_function(link_map_t* lm, const char* func, pid_t pid)
@@ -158,7 +160,9 @@ ptr_u_t get_remote_function(const char* lib, const char* func, pid_t pid)
         if (lib != NULL)
         {
             if (!strstr(lm->l_name, lib))
+            {
                 goto next;
+            }
         }
 
         lm     = (link_map_t*)dlopen(lm->l_name, RTLD_NOW);
